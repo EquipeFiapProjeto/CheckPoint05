@@ -1,0 +1,39 @@
+/* Estilos para organizar os cards de produtos em uma grade responsiva */
+.cardGrid {
+    display: grid; /* Usamos o sistema de grid para organizar os elementos */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Cria colunas que se ajustam automaticamente
+                                                               * O 'auto-fit' faz com que as colunas se encaixem no espaço disponível
+                                                               * 'minmax(250px, 1fr)' define que cada coluna terá no mínimo 250 pixels de largura
+                                                               * e no máximo ocupará 1 fração (1fr) do espaço restante, tornando-as flexíveis */
+    gap: 1rem; /* Define um espaçamento de 1rem (root em) entre as linhas e colunas da grade,
+                 * separando visualmente os cards */
+  }
+  
+  /* Estilos para cada card individual de produto */
+  .card {
+    border: 1px solid #ccc; /* Adiciona uma borda sutil de 1 pixel na cor cinza claro (#ccc) ao redor do card */
+    padding: 1rem; /* Define um espaçamento interno de 1rem dentro do card, afastando o conteúdo da borda */
+    border-radius: 6px; /* Arredonda os cantos do card em 6 pixels, dando uma aparência mais suave */
+    text-align: center; /* Centraliza o texto dentro do card */
+    background-color: #fff; /* Define a cor de fundo do card como branco */
+  }
+  
+  /* Estilos para a imagem dentro do card */
+  .image {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do seu container (o card) */
+    border-radius: 4px; /* Arredonda os cantos da imagem em 4 pixels, combinando com o estilo do card */
+  }
+  
+  /* Estilos para o cabeçalho da página ou seção */
+  .header {
+    background-color: #333; /* Define a cor de fundo do cabeçalho como um cinza escuro (#333) */
+    color: white; /* Define a cor do texto dentro do cabeçalho como branco, para bom contraste com o fundo escuro */
+    padding: 1rem; /* Define um espaçamento interno de 1rem dentro do cabeçalho */
+    text-align: center; /* Centraliza o texto dentro do cabeçalho */
+    font-size: 1.5rem; /* Define o tamanho da fonte do texto do cabeçalho como 1.5 vezes o tamanho da fonte padrão */
+    font-weight: bold; /* Deixa o texto do cabeçalho em negrito */
+    margin-bottom: 2rem; /* Adiciona uma margem inferior de 2rem abaixo do cabeçalho, separando-o do conteúdo seguinte */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra sutil abaixo do cabeçalho,
+                                             * com deslocamento vertical de 2 pixels, espalhamento de 5 pixels
+                                             * e cor preta com 20% de opacidade */
+  }

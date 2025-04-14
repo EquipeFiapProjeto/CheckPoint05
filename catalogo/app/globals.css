@@ -1,0 +1,9 @@
+/* Estilos para o container que envolve os cards de produtos */
+.cardsContainer {
+  display: flex; /* Usa o modelo de layout flexbox para organizar os elementos filhos (os cards) */
+  flex-wrap: wrap; /* Permite que os cards que não cabem na largura da linha passem para a próxima linha,
+                   * tornando o layout responsivo */
+  justify-content: center; /* Centraliza os cards horizontalmente dentro do container, útil quando há espaço sobrando */
+  gap: 1rem; /* Define um espaçamento de 1rem (root em) entre os cards, tanto horizontal quanto verticalmente,
+               * para separá-los visualmente */
+}
